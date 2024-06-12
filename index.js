@@ -1,6 +1,14 @@
 import connection from "./src/db/index.js";
 import { app } from "./src/app.js";
 import mongoose from 'mongoose';
+
+//This is to access require while using module as a type in package.json
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+
+const dotenv = require('dotenv');
+dotenv.config();
+
 const PORT = process.env.PORT || 8000;
 
 //connection()
