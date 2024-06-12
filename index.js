@@ -20,7 +20,7 @@ const PORT = process.env.PORT || 8000;
   //.catch((err) => console.log("connection failed", err));
 
   mongoose
-    .connect(`mongodb+srv://hashiradnan55:duV57gxalfflwe21@quizgame-mernstack.8jnxvsr.mongodb.net/?retryWrites=true&w=majority `)
+    .connect(`mongodb+srv://maaz:maaz@cluster0.0zdduss.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`)
     .then(()=>{
         console.log("App is connected to DB");
 
